@@ -1,0 +1,32 @@
+.main{width:1190px;margin:10px auto;}
+.main-content{background:#fff;padding:20px;border:1px solid #e5e5e5;border-radius:5px;}
+div.search{width:100%;height:75px;border-bottom:1px solid #e5e5e5;}
+div.select{height:75px;float:left;}
+div.select div.province{width:130px;border:1px solid #e5e5e5;margin-left:20px;border-radius:5px;color:#666;padding:10px;font-size:14px;}
+div.select div.city{width:130px;border:1px solid #e5e5e5;margin-left:20px;border-radius:5px;color:#666;padding:10px;font-size:14px;}
+div.province i,div.city i{font-size:12px;float:right;}
+div.select>span,div.select>div{float:left;}
+div.search-out{float:left;margin-left:50px;}
+div.search-out>span,div.search-out>.search-in{float:left;}
+div.search-in{border:1px solid #e5e5e5;margin-left:20px;border-radius:5px;color:#666;font-size:14px;}
+div.search-in input{width: 190px;height: 38px;border: 0;border-radius: 5px;padding-left: 10px;}
+div.select .word,div.search-out .word{margin:10px 0;}
+div.hotCity{width:100%;height:80px;border-bottom:1px solid #e5e5e5;}
+.hotCity span.word{margin:30px 0;float:left;font-size:16px;}
+.hotCity .citys{float:left;margin:30px 0;}
+.hotCity .citys a{display:inline-block;color:#666;margin:0 20px;font-size:14px;}
+.hotCity .citys a:hover{color:#13d1be;}
+
+
+div.letter{width:100%;height:75px;}
+.letter span.word{float:left;margin:27px 0;font-size:16px;}
+.letter .letter-in{float:left;margin:27px 0;font-size:15px;}
+.letter .letter-in a{color:#666;padding: 2px;border-radius: 50%;margin: 0 5px;display: inline-block;width: 20px;text-align: center;}
+.letter .letter-in a:hover{background:#f8f8f8;}
+div.letters{min-height:78px;padding: 10px 30px 10px 10px;width: 97%;border-radius:10px;}
+div.letters:hover{background:#f8f8f8;}
+div.letters span.letter{float:left;width: 20px;text-align: center;height: 20px;display: inline-block;padding: 10px;border-radius: 50%;background: #13d1be;color: #fff;}
+div.letters div.city{float:left;width:96%;}
+div.letters div.city a{margin: 10px 20px;color: #666;font-size: 14px;display: inline-block;}
+div.letters div.city a:hover{color:#13d1be;}
+div.clear{clear:left;}
