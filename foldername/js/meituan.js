@@ -2,7 +2,7 @@ $(function() {
 
     //header
     $('.out .box,.out .nav').hover(function() {
-        debugger
+      
         var self=$(this);
         // var index=self.index();
         var parent=self.closest('[class=top]');
