@@ -176,7 +176,7 @@ body{width:100%;margin:0;background:#f8f8f8;}
 .main_menu_center_top_left .next{left:50%;margin-left:220px;}
 .main_menu_center_top_left .pnBtn .blackBg{display:block;position:absolute;left:0;top:0;width:100%;height:240px;}
 .main_menu_center_top_left .pnBtn .arrow{display:none;position:absolute;top:0;z-index:1;width:60px;height:240px;}
-.main_menu_center_top_left .pnBtn .arrow:hover{filter:alpha(opacity=60);opacity:0.6;}
+ .main_menu_center_top_left .pnBtn .arrow:hover{filter:alpha(opacity=60);opacity:0.6;}
 .main_menu_center_top_left .prev .arrow{right:0;background:url(../jquerylunbo/images/slider-arrow.png) -120px 0 no-repeat;}
 .main_menu_center_top_left .next .arrow{left:0;background:url(../jquerylunbo/images/slider-arrow.png) 0 0 no-repeat;}
 
