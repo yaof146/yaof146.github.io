@@ -10,8 +10,7 @@ $(function() {
                        'border-left':'1px solid #e5e5e5',
                        'border-right':'1px solid #e5e5e5'
                      })
-    }
-    ,function() {
+    },function() {
         var self=$(this);
         self.find('.nav').hide();
         self.find('.box').css({
