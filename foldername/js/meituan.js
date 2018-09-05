@@ -1,26 +1,26 @@
 $(function() {
 
     //header
-    $('.out .box,.out .nav').hover(function() {
-      
+   $('li.top').hover(function() {
         var self=$(this);
-        // var index=self.index();
-        var parent=self.closest('[class=top]');
-        parent.find('.nav').show();
-    },function() {
-        parent.find('.nav').hide();
-    });
-    $('.out .nav').hover(function() {
+        self.find('.nav').show();
+        self.find('.box').css({
+                       'color':'#31bbac',
+                       'background':'#fff',
+                       'border-left':'1px solid #e5e5e5',
+                       'border-right':'1px solid #e5e5e5'
+                     })
+    }
+    ,function() {
         var self=$(this);
-        var index=self.index();
-        var parent=self.closest('[class=top]');
-        parent.find('.box').eq(index).css({
-           'color':'#31bbac',
-           'background':'#fff',
-           'border-left':'1px solid #e5e5e5',
-           'border-right':'1px solid #e5e5e5'
-         })
+        self.find('.nav').hide();
+        self.find('.box').css({
+                        'color':'#999',
+                        'background':'#f8f8f8',
+                        'border':'0'
+                    })
     });
+
 
 
 
