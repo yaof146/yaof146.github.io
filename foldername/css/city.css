@@ -2,7 +2,8 @@
 .main-content{background:#fff;padding:20px;border:1px solid #e5e5e5;border-radius:5px;}
 div.search{width:100%;height:75px;border-bottom:1px solid #e5e5e5;}
 div.select{height:75px;float:left;}
-div.select div.province{width:130px;border:1px solid #e5e5e5;margin-left:20px;border-radius:5px;color:#666;padding:10px;font-size:14px;}
+div.select div.province{width:130px;border:1px solid #e5e5e5;margin-left:20px;border-radius:5px;color:#666;
+                         padding:10px;font-size:14px;position:relative;}
 div.select div.city{width:130px;border:1px solid #e5e5e5;margin-left:20px;border-radius:5px;color:#666;padding:10px;font-size:14px;}
 div.province i,div.city i{font-size:12px;float:right;}
 div.select>span,div.select>div{float:left;}
@@ -30,3 +31,32 @@ div.letters div.city{float:left;width:96%;}
 div.letters div.city a{margin: 10px 20px;color: #666;font-size: 14px;display: inline-block;}
 div.letters div.city a:hover{color:#13d1be;}
 div.clear{clear:left;}
+
+div.province-in{display:none;position:absolute;top:50px;left:0;width:220px;border:1px solid #e5e5e5;padding:20px;z-index:999;background:#fff;}
+div.triangle{
+
+    position:relative;
+    border-left:7px solid transparent;
+    border-right:7px solid transparent;
+    border-bottom:9.17px solid #ccc;
+    width:0;
+    height:0;
+    top:-63px;
+    z-index:1000;
+}
+div.triangle:after{
+
+    position:absolute;
+    width:0;
+    height:0;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-bottom:7px solid #fff;
+    top:2px;
+    left:-5px;
+    content:"";
+    z-index:1000;
+}
+div.province-in h2{font-size:16px;color:#ccc;margin-top:0;}
+div.province-invisible a{margin:0 42px 10px 0;color:#666;display: inline-block;font-size:12px;}
+div.province-invisible a:hover{color:#31bbac;}
