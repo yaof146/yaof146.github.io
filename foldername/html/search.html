@@ -1,0 +1,1102 @@
+<!doctype html>
+<html>
+    <head>
+        <title>西安美团网-西安美食_酒店_旅游_团购_电影_吃喝玩乐</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="../js/jQuery.js"></script>
+        <script type="text/javascript" src="../js/jquery-ui.js"></script>
+        <script type="text/javascript" src="../js/meituan.js"></script>
+        <script type="text/javascript" src="../js/search.js"></script>
+        <!--<script type="text/javascript" src="../js/nav.js"></script>-->
+        <link type="text/css" rel="stylesheet" href="../css/meituan.css" />
+        <link type="text/css" rel="stylesheet" href="../css/search.css" />
+        <link type="image/x-icon" rel="shortcut icon" href="../img/01.jpg" />
+        <link type="text/css" rel="stylesheet" href="//at.alicdn.com/t/font_757291_imy0ittmccb.css" />
+    </head>
+    <body>
+        <div class="header">
+            <div class="header_top">
+                <div class="header_top_left">
+                    <span><img src="../img/1.png" /></span>
+                    <span>西安</span>
+                    <span><a href="">切换城市</a></span>
+                    <div class="place">
+                        <span class="signal">[</span>
+                        <a href="">咸阳</a>
+                        <a href="">高陵</a>
+                        <a href="">临潼</a>
+                        <span class="signal">]</span>
+                    </div>
+                    <div class="entry">
+                        <a class="entry" href="">立即登录</a>
+                        <a href="">注册</a>
+                    </div>
+                </div>
+                <div class="header_top_right">
+                    <ul class="out">
+                        <li class="top">
+                            <a href="#" class="box" id="box">我的美团</a>
+                            <ul class="nav" id="box-invisible">
+                                <li><a href="#">我的订单</a></li>
+                                <li><a href="#">我的评价</a></li>
+                                <li><a href="#">我的收藏</a></li>
+                                <li><a href="#">抵用券</a></li>
+                                <li><a href="#">账户设置</a></li>
+                            </ul>
+                        </li>
+                        <li class="top"><a href="#" class="word">手机APP</a></li>
+                        <li class="top">
+                            <a href="#" class="box" id="box2">商家中心</a>
+                            <ul class="nav long" id="box2-invisible">
+                                <li class="empty"></li>
+                                <li class="long"><a href="#">登录商家中心</a></li>
+                                <li class="long"><a href="#">我想合作</a></li>
+                                <li class="long"><a href="#">手机免费开店</a></li>
+                                <li class="long"><a href="#">餐饮代理商招募</a></li>
+                                <li class="long"><a href="#">商家申请开票</a></li>
+                            </ul>
+                        </li>
+                        <li class="top">
+                            <a href="#" class="box box-big" id="box3">网站导航</a>
+                            <div class="big" id="box3-invisible">
+                                <div class="big-first">
+                                    <p>酒店旅游</p>
+                                    <ul>
+                                        <li class="big-li"><a href="#">国际机票</a></li>
+                                        <li class="big-li"><a href="#">火车票</a></li>
+                                        <li class="big-li"><a href="#">榛果民宿</a></li>
+                                        <li class="big-li"><a href="#">经济型酒店</a></li>
+                                        <li class="big-li"><a href="#">主题酒店</a></li>
+                                        <li class="big-li"><a href="#">商务酒店</a></li>
+                                        <li class="big-li"><a href="#">公寓</a></li>
+                                        <li class="big-li"><a href="#">豪华酒店</a></li>
+                                        <li class="big-li"><a href="#">客栈</a></li>
+                                        <li class="big-li"><a href="#">青年旅社</a></li>
+                                        <li class="big-li"><a href="#">度假酒店</a></li>
+                                        <li class="big-li"><a href="#">别墅</a></li>
+                                        <li class="big-li"><a href="#">农家院</a></li>
+                                    </ul>
+                                </div>
+                                <div class="big-second">
+                                    <p>吃美食</p>
+                                    <ul>
+                                        <li class="big-second-li"><a href="#">烤鱼</a></li>
+                                        <li class="big-second-li"><a href="#">特色小吃</a></li>
+                                        <li class="big-second-li"><a href="#">烧烤</a></li>
+                                        <li class="big-second-li"><a href="#">自助餐</a></li>
+                                        <li class="big-second-li"><a href="#">火锅</a></li>
+                                        <li class="big-second-li"><a href="#">代金券</a></li>
+                                    </ul>
+                                </div>
+                                <div class="big-third">
+                                    <p>看电影</p>
+                                    <ul>
+                                        <li class="big-third-li"><a href="#">热映电影</a></li>
+                                        <li class="big-third-li"><a href="#">热门影院</a></li>
+                                        <li class="big-third-li"><a href="#">热映电影口碑榜</a></li>
+                                        <li class="big-third-li"><a href="#">最受期待电影</a></li>
+                                        <li class="big-third-li"><a href="#">国内票房榜</a></li>
+                                        <li class="big-third-li"><a href="#">北美票房榜</a></li>
+                                        <li class="big-third-li"><a href="#">电影排行榜</a></li>
+                                    </ul>
+                                </div>
+                                <div class="big-fourth">
+                                    <p>手机应用</p>
+                                    <div>
+                                        <a href="#"><img src="../img/meituan.png" />></a>
+                                        <a href="#"><img src="../img/waimai.png" />></a>
+                                        <a href="#"><img src="../img/zhenguo.png" />></a>
+                                        <a href="#"><img src="../img/dianping.png" />></a>
+                                        <a href="#"><img src="../img/maoyan.png" />></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_center_out">
+                <div class="header_center">
+                    <div class="header_center_left">
+                        <a><img src="../img/logo.png"></a>
+                    </div>
+                    <div class="header_center_center">
+                        <div class="header_center_center_top">
+                            <input type="text" placeholder="搜索商家或地点" class="input_button" />
+                            <a href="#"><input type="button" class="search_button" /></a>
+                        </div>
+                        <div class="header_center_center_bottom">
+                            <a href="">秦始皇陵博物馆</a>
+                            <a href="">西安曲江海洋极地公园</a>
+                            <a href="">西安秦岭野生动物园</a>
+                            <a href="">Double one蹦床主题公园</a>
+                        </div>
+                    </div>
+                    <div class="header_center_right">
+                        <div class="box">
+                            <a href="#">
+                                <i class="iconfont icon-tui"></i>
+                                <span>随时退</span>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <a href="#">
+                                <i class="iconfont icon-duihao" style="font-size:20px;"></i>
+                                <span>不满意免单</span>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <a href="#">
+                                <i class="iconfont icon-qian2-copy-copy-copy-copy" style="font-size:20px;"></i>
+                                <span>过期退</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="mulu">
+                西安美团
+                <i class="iconfont icon-xiangyou1"></i>
+                <span></span>
+            </div>
+            <div class="content-place">
+                <div class="place">
+                    <div class="class">
+                        <div class="left">
+                            <span>分类</span>
+                            <a href="#">全部</a>
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li class="hover" menuTitle="niceFood">
+                                    <a href="#">
+                                        <span>美食</span>
+                                        <i class="iconfont icon-biaodankongjian-"></i>
+                                    </a>
+
+                                    <div class="a-invisible">
+                                        <div class="triangle"></div>
+                                        <h3>美食</h3>
+                                        <div class="out"></div>
+                                    </div>
+                                </li>
+                                <li class="hover" menuTitle="hotel">
+                                    <a href="#">
+                                        <span>酒店住宿</span>
+                                        <i class="iconfont icon-biaodankongjian-"></i>
+                                    </a>
+
+                                    <div class="a-invisible">
+                                        <div class="triangle"></div>
+                                        <h3>酒店住宿</h3>
+                                        <div class="out"></div>
+                                    </div>
+                                </li>
+                                <li class="hover" menuTitle="visit">
+                                    <a href="#">
+                                        <span>周边游</span>
+                                        <i class="iconfont icon-biaodankongjian-"></i>
+                                    </a>
+
+                                    <div class="a-invisible">
+                                        <div class="triangle"></div>
+                                        <h3>周边游</h3>
+                                        <div class="out"></div>
+                                    </div>
+                                </li>
+                                <li class="hover" menuTitle="ktv">
+                                    <a href="#">
+                                        <span>休闲娱乐</span>
+                                        <i class="iconfont icon-biaodankongjian-"></i>
+                                    </a>
+
+                                    <div class="a-invisible">
+                                        <div class="triangle"></div>
+                                        <h3>休闲娱乐</h3>
+                                        <div class="out"></div>
+                                    </div>
+                                </li>
+                                <li class="hover" menuTitle="life">
+                                    <a href="#">
+                                        <span>生活服务</span>
+                                        <i class="iconfont icon-biaodankongjian-"></i>
+                                    </a>
+
+                                    <div class="a-invisible">
+                                        <div class="triangle"></div>
+                                        <h3>生活服务</h3>
+                                        <div class="out"></div>
+                                    </div>
+                                </li>
+                                <li class="hover" menuTitle="plane">
+                                    <a href="#">
+                                        <span>旅游出行</span>
+                                        <i class="iconfont icon-biaodankongjian-"></i>
+                                    </a>
+
+                                    <div class="a-invisible">
+                                        <div class="triangle"></div>
+                                        <h3>旅游出行</h3>
+                                        <div class="out"></div>
+                                    </div>
+                                </li>
+                                <li class="hover" menuTitle="banquet">
+                                    <a href="#">
+                                        <span>宴会</span>
+                                        <i class="iconfont icon-biaodankongjian-"></i>
+                                    </a>
+
+                                    <div class="a-invisible">
+                                        <div class="triangle"></div>
+                                        <h3>宴会</h3>
+                                        <div class="out"></div>
+                                    </div>
+                                </li>
+                                <li class="hover" menuTitle="shopping">
+                                    <a href="#">
+                                        <span>时尚购</span>
+                                        <i class="iconfont icon-biaodankongjian-"></i>
+                                    </a>
+
+                                    <div class="a-invisible">
+                                        <div class="triangle"></div>
+                                        <h3>时尚购</h3>
+                                        <div class="out"></div>
+                                    </div>
+                                </li>
+                                <li class="hover" menuTitle="tour">
+                                    <a href="#">
+                                        <span>旅游</span>
+                                        <i class="iconfont icon-biaodankongjian-"></i>
+                                    </a>
+
+                                    <div class="a-invisible">
+                                        <div class="triangle"></div>
+                                        <h3>旅游</h3>
+                                        <div class="out"></div>
+                                    </div>
+                                </li>
+                                <li class="hover" menuTitle="beautiful">
+                                    <a href="#">
+                                        <span>丽人</span>
+                                        <i class="iconfont icon-biaodankongjian-"></i>
+                                    </a>
+
+                                    <div class="a-invisible">
+                                        <div class="triangle"></div>
+                                        <h3>丽人</h3>
+                                        <div class="out"></div>
+                                    </div>
+                                </li>
+                                <li class="hover" menuTitle="sport">
+                                    <a href="#">
+                                        <span>运动健身</span>
+                                        <i class="iconfont icon-biaodankongjian-"></i>
+                                    </a>
+
+                                    <div class="a-invisible">
+                                        <div class="triangle"></div>
+                                        <h3>运动健身</h3>
+                                        <div class="out"></div>
+                                    </div>
+                                </li>
+                                <li class="hover" menuTitle="child">
+                                    <a href="#">
+                                        <span>母婴亲子</span>
+                                        <i class="iconfont icon-biaodankongjian-"></i>
+                                    </a>
+
+                                    <div class="a-invisible">
+                                        <div class="triangle"></div>
+                                        <h3>母婴亲子</h3>
+                                        <div class="out"></div>
+                                    </div>
+                                </li>
+                                <li class="hover" menuTitle="animal">
+                                    <a href="#">
+                                        <span>宠物</span>
+                                        <i class="iconfont icon-biaodankongjian-"></i>
+                                    </a>
+
+                                    <div class="a-invisible">
+                                        <div class="triangle"></div>
+                                        <h3>宠物</h3>
+                                        <div class="out"></div>
+                                    </div>
+                                </li>
+                                <li class="hover" menuTitle="car">
+                                    <a href="#">
+                                        <span>汽车服务</span>
+                                        <i class="iconfont icon-biaodankongjian-"></i>
+                                    </a>
+
+                                    <div class="a-invisible">
+                                        <div class="triangle"></div>
+                                        <h3>汽车服务</h3>
+                                        <div class="out"></div>
+                                    </div>
+                                </li>
+                                <li class="hover" menuTitle="photo">
+                                    <a href="#">
+                                        <span>摄影写真</span>
+                                        <i class="iconfont icon-biaodankongjian-"></i>
+                                    </a>
+
+                                    <div class="a-invisible">
+                                        <div class="triangle"></div>
+                                        <h3>摄影写真</h3>
+                                        <div class="out"></div>
+                                    </div>
+                                </li>
+                                <li class="hover" menuTitle="marry">
+                                    <a href="#">
+                                        <span>结婚</span>
+                                        <i class="iconfont icon-biaodankongjian-"></i>
+                                    </a>
+
+                                    <div class="a-invisible">
+                                        <div class="triangle"></div>
+                                        <h3>结婚</h3>
+                                        <div class="out"></div>
+                                    </div>
+                                </li>
+                                <li class="hover" menuTitle="home">
+                                    <a href="#">
+                                        <span>家装</span>
+                                        <i class="iconfont icon-biaodankongjian-"></i>
+                                    </a>
+
+                                    <div class="a-invisible">
+                                        <div class="triangle"></div>
+                                        <h3>家装</h3>
+                                        <div class="out"></div>
+                                    </div>
+                                </li>
+                                <li class="hover" menuTitle="study">
+                                    <a href="#">
+                                        <span>学习培训</span>
+                                        <i class="iconfont icon-biaodankongjian-"></i>
+                                    </a>
+
+                                    <div class="a-invisible">
+                                        <div class="triangle"></div>
+                                        <h3>学习培训</h3>
+                                        <div class="out"></div>
+                                    </div>
+                                </li>
+                                <li class="hover" menuTitle="abroad">
+                                    <a href="#">
+                                        <span>出境游</span>
+                                        <i class="iconfont icon-biaodankongjian-"></i>
+                                    </a>
+
+                                    <div class="a-invisible">
+                                        <div class="triangle"></div>
+                                        <h3>出境游</h3>
+                                        <div class="out"></div>
+                                    </div>
+                                </li>
+                                <li class="hover" menuTitle="health">
+                                    <a href="#">
+                                        <span>医疗</span>
+                                        <i class="iconfont icon-biaodankongjian-"></i>
+                                    </a>
+
+                                    <div class="a-invisible">
+                                        <div class="triangle"></div>
+                                        <h3>医疗</h3>
+                                        <div class="out"></div>
+                                    </div>
+                                </li>
+                                <li class="hover" menuTitle="minsu">
+                                    <a href="#">
+                                        <span>榛果民宿</span>
+                                        <i class="iconfont icon-biaodankongjian-"></i>
+                                    </a>
+
+                                    <div class="a-invisible">
+                                        <div class="triangle"></div>
+                                        <h3>榛果民宿</h3>
+                                        <div class="out"></div>
+                                    </div>
+                                </li>
+                                <li class="hover" menuTitle="luckydraw">
+                                    <a href="#">
+                                        <span>抽奖</span>
+                                        <i class="iconfont icon-biaodankongjian-"></i>
+                                    </a>
+
+                                    <div class="a-invisible">
+                                        <div class="triangle"></div>
+                                        <h3>抽奖</h3>
+                                        <div class="out"></div>
+                                    </div>
+                                </li>
+                                <li class="clear"></li>
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+
+
+                    <div class="quyu">
+                        <div class="region">
+                            <div class="left">
+                                <span>区域</span>
+                                <a href="#">全部</a>
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li class="hover" menuTitle="tuijian">
+                                        <a href="#">
+                                            <span>推荐商圈</span>
+                                            <i class="iconfont icon-biaodankongjian-"></i>
+                                        </a>
+
+                                        <div class="a-invisible">
+                                            <div class="triangle"></div>
+                                            <h3>推荐商圈</h3>
+                                            <div class="out"></div>
+                                        </div>
+                                    </li>
+                                    <li class="hover" menuTitle="beilin">
+                                        <a href="#">
+                                            <span>碑林区</span>
+                                            <i class="iconfont icon-biaodankongjian-"></i>
+                                        </a>
+
+                                        <div class="a-invisible">
+                                            <div class="triangle"></div>
+                                            <h3>碑林区</h3>
+                                            <div class="out"></div>
+                                        </div>
+                                    </li>
+                                    <li class="hover" menuTitle="yanta">
+                                        <a href="#">
+                                            <span>雁塔区</span>
+                                            <i class="iconfont icon-biaodankongjian-"></i>
+                                        </a>
+
+                                        <div class="a-invisible">
+                                            <div class="triangle"></div>
+                                            <h3>雁塔区</h3>
+                                            <div class="out"></div>
+                                        </div>
+                                    </li>
+                                    <li class="hover" menuTitle="gaoxin">
+                                        <a href="#">
+                                            <span>高新区</span>
+                                            <i class="iconfont icon-biaodankongjian-"></i>
+                                        </a>
+
+                                        <div class="a-invisible">
+                                            <div class="triangle"></div>
+                                            <h3>高新区</h3>
+                                            <div class="out"></div>
+                                        </div>
+                                    </li>
+                                    <li class="hover" menuTitle="lianhu">
+                                        <a href="#">
+                                            <span>莲湖区</span>
+                                            <i class="iconfont icon-biaodankongjian-"></i>
+                                        </a>
+
+                                        <div class="a-invisible">
+                                            <div class="triangle"></div>
+                                            <h3>莲湖区</h3>
+                                            <div class="out"></div>
+                                        </div>
+                                    </li>
+                                    <li class="hover" menuTitle="weiyang">
+                                        <a href="#">
+                                            <span>未央区</span>
+                                            <i class="iconfont icon-biaodankongjian-"></i>
+                                        </a>
+
+                                        <div class="a-invisible">
+                                            <div class="triangle"></div>
+                                            <h3>未央区</h3>
+                                            <div class="out"></div>
+                                        </div>
+                                    </li>
+                                    <li class="hover" menuTitle="xincheng">
+                                        <a href="#">
+                                            <span>新城区</span>
+                                            <i class="iconfont icon-biaodankongjian-"></i>
+                                        </a>
+
+                                        <div class="a-invisible">
+                                            <div class="triangle"></div>
+                                            <h3>新城区</h3>
+                                            <div class="out"></div>
+                                        </div>
+                                    </li>
+                                    <li class="hover" menuTitle="baqiao">
+                                        <a href="#">
+                                            <span>灞桥区</span>
+                                            <i class="iconfont icon-biaodankongjian-"></i>
+                                        </a>
+
+                                        <div class="a-invisible">
+                                            <div class="triangle"></div>
+                                            <h3>灞桥区</h3>
+                                            <div class="out"></div>
+                                        </div>
+                                    </li>
+                                    <li class="hover" menuTitle="lingtong">
+                                        <a href="#">
+                                            <span>临潼区</span>
+                                            <i class="iconfont icon-biaodankongjian-"></i>
+                                        </a>
+
+                                        <div class="a-invisible">
+                                            <div class="triangle"></div>
+                                            <h3>临潼区</h3>
+                                            <div class="out"></div>
+                                        </div>
+                                    </li>
+                                    <li class="hover" menuTitle="changan">
+                                        <a href="#">
+                                            <span>长安区</span>
+                                            <i class="iconfont icon-biaodankongjian-"></i>
+                                        </a>
+
+                                        <div class="a-invisible">
+                                            <div class="triangle"></div>
+                                            <h3>长安区</h3>
+                                            <div class="out"></div>
+                                        </div>
+                                    </li>
+                                    <li class="hover" menuTitle="gaoling">
+                                        <a href="#">
+                                            <span>高陵区</span>
+                                            <i class="iconfont icon-biaodankongjian-"></i>
+                                        </a>
+
+                                        <div class="a-invisible">
+                                            <div class="triangle"></div>
+                                            <h3>高陵区</h3>
+                                            <div class="out"></div>
+                                        </div>
+                                    </li>
+                                    <li class="hover" menuTitle="yanliang">
+                                        <a href="#">
+                                            <span>阎良区</span>
+                                            <i class="iconfont icon-biaodankongjian-"></i>
+                                        </a>
+
+                                        <div class="a-invisible">
+                                            <div class="triangle"></div>
+                                            <h3>阎良区</h3>
+                                            <div class="out"></div>
+                                        </div>
+                                    </li>
+                                    <li class="hover" menuTitle="lantian">
+                                        <a href="#">
+                                            <span>蓝田县</span>
+                                            <i class="iconfont icon-biaodankongjian-"></i>
+                                        </a>
+
+                                        <div class="a-invisible">
+                                            <div class="triangle"></div>
+                                            <h3>蓝田县</h3>
+                                            <div class="out"></div>
+                                        </div>
+                                    </li>
+                                    <li class="hover" menuTitle="zhouzhi">
+                                        <a href="#">
+                                            <span>周至县</span>
+                                            <i class="iconfont icon-biaodankongjian-"></i>
+                                        </a>
+
+                                        <div class="a-invisible">
+                                            <div class="triangle"></div>
+                                            <h3>周至县</h3>
+                                            <div class="out"></div>
+                                        </div>
+                                    </li>
+                                    <li class="hover1">
+                                        <a href="#">
+                                            <span class="new">近郊</span>
+                                        </a>
+                                    </li>
+                                    <li class="hover" menuTitle="yi">
+                                        <a href="#">
+                                            <span>鄠邑区</span>
+                                            <i class="iconfont icon-biaodankongjian-"></i>
+                                        </a>
+
+                                        <div class="a-invisible">
+                                            <div class="triangle"></div>
+                                            <h3>鄠邑区</h3>
+                                            <div class="out"></div>
+                                        </div>
+                                    </li>
+                                    <li class="hover1">
+                                        <a href="#">
+                                            <span class="new">西咸新区</span>
+                                        </a>
+                                    </li>
+                                    <li class="hover1">
+                                        <a href="#">
+                                            <span class="new">西安</span>
+                                        </a>
+                                    </li>
+                                    <li class="clear"></li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="end">
+                对不起，没有符合条件的商家
+            </div>
+            <div class="like">
+                <h2>猜你喜欢</h2>
+                <div class="like-food">
+                    <a href="#" class="item">
+                        <div class="img"><img src="../img/01fa2e7e4b5c653eb74c2aad8f9701d382429.jpg" /></div>
+                        <div class="word">
+                            <div class="title">奥赛奥章鱼水煎肉（cityon熙地港店）</div>
+                            <div class="evaluate">
+                                <div class="icon">
+                                    <ul>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-xingzhuang60kaobei2"></i></li>
+                                        <li><i class="iconfont icon-banwujiaoxing up1" ></i></li>
+                                    </ul>
+                                </div>
+                                <div class="people">2222人评价</div>
+                            </div>
+                            <div class="address">未央路</div>
+                            <div class="price">
+                                <span class="money">￥</span>
+                                <span class="number">78.0</span>
+                                <span class="qi">起</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="img"><img src="../img/01fa2e7e4b5c653eb74c2aad8f9701d382429.jpg" /></div>
+                        <div class="word">
+                            <div class="title">奥赛奥章鱼水煎肉（cityon熙地港店）</div>
+                            <div class="evaluate">
+                                <div class="icon">
+                                    <ul>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-xingzhuang60kaobei2"></i></li>
+                                        <li><i class="iconfont icon-banwujiaoxing up1" ></i></li>
+                                    </ul>
+                                </div>
+                                <div class="people">2222人评价</div>
+                            </div>
+                            <div class="address">未央路</div>
+                            <div class="price">
+                                <span class="money">￥</span>
+                                <span class="number">78.0</span>
+                                <span class="qi">起</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="img"><img src="../img/01fa2e7e4b5c653eb74c2aad8f9701d382429.jpg" /></div>
+                        <div class="word">
+                            <div class="title">奥赛奥章鱼水煎肉（cityon熙地港店）</div>
+                            <div class="evaluate">
+                                <div class="icon">
+                                    <ul>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-xingzhuang60kaobei2"></i></li>
+                                        <li><i class="iconfont icon-banwujiaoxing up1" ></i></li>
+                                    </ul>
+                                </div>
+                                <div class="people">2222人评价</div>
+                            </div>
+                            <div class="address">未央路</div>
+                            <div class="price">
+                                <span class="money">￥</span>
+                                <span class="number">78.0</span>
+                                <span class="qi">起</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="img"><img src="../img/01fa2e7e4b5c653eb74c2aad8f9701d382429.jpg" /></div>
+                        <div class="word">
+                            <div class="title">奥赛奥章鱼水煎肉（cityon熙地港店）</div>
+                            <div class="evaluate">
+                                <div class="icon">
+                                    <ul>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-xingzhuang60kaobei2"></i></li>
+                                        <li><i class="iconfont icon-banwujiaoxing up1" ></i></li>
+                                    </ul>
+                                </div>
+                                <div class="people">2222人评价</div>
+                            </div>
+                            <div class="address">未央路</div>
+                            <div class="price">
+                                <span class="money">￥</span>
+                                <span class="number">78.0</span>
+                                <span class="qi">起</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="img"><img src="../img/01fa2e7e4b5c653eb74c2aad8f9701d382429.jpg" /></div>
+                        <div class="word">
+                            <div class="title">奥赛奥章鱼水煎肉（cityon熙地港店）</div>
+                            <div class="evaluate">
+                                <div class="icon">
+                                    <ul>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-xingzhuang60kaobei2"></i></li>
+                                        <li><i class="iconfont icon-banwujiaoxing up1" ></i></li>
+                                    </ul>
+                                </div>
+                                <div class="people">2222人评价</div>
+                            </div>
+                            <div class="address">未央路</div>
+                            <div class="price">
+                                <span class="money">￥</span>
+                                <span class="number">78.0</span>
+                                <span class="qi">起</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="img"><img src="../img/01fa2e7e4b5c653eb74c2aad8f9701d382429.jpg" /></div>
+                        <div class="word">
+                            <div class="title">奥赛奥章鱼水煎肉（cityon熙地港店）</div>
+                            <div class="evaluate">
+                                <div class="icon">
+                                    <ul>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-xingzhuang60kaobei2"></i></li>
+                                        <li><i class="iconfont icon-banwujiaoxing up1" ></i></li>
+                                    </ul>
+                                </div>
+                                <div class="people">2222人评价</div>
+                            </div>
+                            <div class="address">未央路</div>
+                            <div class="price">
+                                <span class="money">￥</span>
+                                <span class="number">78.0</span>
+                                <span class="qi">起</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="img"><img src="../img/01fa2e7e4b5c653eb74c2aad8f9701d382429.jpg" /></div>
+                        <div class="word">
+                            <div class="title">奥赛奥章鱼水煎肉（cityon熙地港店）</div>
+                            <div class="evaluate">
+                                <div class="icon">
+                                    <ul>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-xingzhuang60kaobei2"></i></li>
+                                        <li><i class="iconfont icon-banwujiaoxing up1" ></i></li>
+                                    </ul>
+                                </div>
+                                <div class="people">2222人评价</div>
+                            </div>
+                            <div class="address">未央路</div>
+                            <div class="price">
+                                <span class="money">￥</span>
+                                <span class="number">78.0</span>
+                                <span class="qi">起</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="img"><img src="../img/01fa2e7e4b5c653eb74c2aad8f9701d382429.jpg" /></div>
+                        <div class="word">
+                            <div class="title">奥赛奥章鱼水煎肉（cityon熙地港店）</div>
+                            <div class="evaluate">
+                                <div class="icon">
+                                    <ul>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-xingzhuang60kaobei2"></i></li>
+                                        <li><i class="iconfont icon-banwujiaoxing up1" ></i></li>
+                                    </ul>
+                                </div>
+                                <div class="people">2222人评价</div>
+                            </div>
+                            <div class="address">未央路</div>
+                            <div class="price">
+                                <span class="money">￥</span>
+                                <span class="number">78.0</span>
+                                <span class="qi">起</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="img"><img src="../img/01fa2e7e4b5c653eb74c2aad8f9701d382429.jpg" /></div>
+                        <div class="word">
+                            <div class="title">奥赛奥章鱼水煎肉（cityon熙地港店）</div>
+                            <div class="evaluate">
+                                <div class="icon">
+                                    <ul>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-xingzhuang60kaobei2"></i></li>
+                                        <li><i class="iconfont icon-banwujiaoxing up1" ></i></li>
+                                    </ul>
+                                </div>
+                                <div class="people">2222人评价</div>
+                            </div>
+                            <div class="address">未央路</div>
+                            <div class="price">
+                                <span class="money">￥</span>
+                                <span class="number">78.0</span>
+                                <span class="qi">起</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="img"><img src="../img/01fa2e7e4b5c653eb74c2aad8f9701d382429.jpg" /></div>
+                        <div class="word">
+                            <div class="title">奥赛奥章鱼水煎肉（cityon熙地港店）</div>
+                            <div class="evaluate">
+                                <div class="icon">
+                                    <ul>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-wujiaoxing"></i></li>
+                                        <li><i class="iconfont icon-xingzhuang60kaobei2"></i></li>
+                                        <li><i class="iconfont icon-banwujiaoxing up1" ></i></li>
+                                    </ul>
+                                </div>
+                                <div class="people">2222人评价</div>
+                            </div>
+                            <div class="address">未央路</div>
+                            <div class="price">
+                                <span class="money">￥</span>
+                                <span class="number">78.0</span>
+                                <span class="qi">起</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="new-city">
+            <div class="new-city-top"><span>美团导航</span></div>
+            <div class="new-city-main">
+                <div class="city">
+                    <div class="title">热门城市</div>
+                    <div class="content">
+                        <div><a href="#"><span class="city">济南</span></a></div>
+                        <div><a href="#"><span class="city">长沙</span></a></div>
+                        <div><a href="#"><span class="city">贵阳</span></a></div>
+                        <div><a href="#"><span class="city">深圳</span></a></div>
+                        <div><a href="#"><span class="city">青岛</span></a></div>
+                        <div><a href="#"><span class="city">郑州</span></a></div>
+                        <div><a href="#"><span class="city">天津</span></a></div>
+                        <div><a href="#"><span class="city">重庆</span></a></div>
+                        <div><a href="#"><span class="city">釜山</span></a></div>
+                        <div><a href="#"><span class="city">福州</span></a></div>
+                        <div><a href="#"><span class="city">无锡</span></a></div>
+                        <div><a href="#"><span class="city">大连</span></a></div>
+                        <div><a href="#"><span class="city">哈尔滨</span></a></div>
+                        <div><a href="#"><span class="city">宁波</span></a></div>
+                        <div><a href="#"><span class="city">杭州</span></a></div>
+                        <div><a href="#"><span class="city">厦门</span></a></div>
+                        <div><a href="#"><span class="city">太原</span></a></div>
+                        <div><a href="#"><span class="city">常州</span></a></div>
+                        <div><a href="#"><span class="city">成都</span></a></div>
+                        <div><a href="#"><span class="city">长春</span></a></div>
+                    </div>
+                </div>
+                <div class="classify">
+                    <div class="title">热门分类</div>
+                    <div class="content">
+                        <div><a href="#"><span class="city1">酒店</span><span class="hot">Hot</span></a></div>
+                        <div><a href="#"><span class="city">美食</span></a></div>
+                        <div><a href="#"><span class="city">休闲娱乐</span></a></div>
+                        <div><a href="#"><span class="city">深圳</span></a></div>
+                        <div><a href="#"><span class="city">青岛</span></a></div>
+                        <div><a href="#"><span class="city">郑州</span></a></div>
+                        <div><a href="#"><span class="city">天津</span></a></div>
+                        <div><a href="#"><span class="city">重庆</span></a></div>
+                        <div><a href="#"><span class="city">釜山</span></a></div>
+                        <div><a href="#"><span class="city">福州</span></a></div>
+                        <div><a href="#"><span class="city">无锡</span></a></div>
+                        <div><a href="#"><span class="city">大连</span></a></div>
+                        <div><a href="#"><span class="city">哈尔滨</span></a></div>
+                        <div><a href="#"><span class="city">宁波</span></a></div>
+                        <div><a href="#"><span class="city">杭州</span></a></div>
+                        <div><a href="#"><span class="city">厦门</span></a></div>
+                        <div><a href="#"><span class="city">太原</span></a></div>
+                        <div><a href="#"><span class="city">常州</span></a></div>
+                        <div><a href="#"><span class="city">成都</span></a></div>
+                        <div><a href="#"><span class="city">长春</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-link">
+                    <div class="box">
+                        <ul>
+                            <li class="title-li">用户帮助</li>
+                            <li class="specific"><a href="#">美团承诺</a></li>
+                            <li class="specific"><a href="#">购物保障</a></li>
+                            <li class="specific"><a href="#">申请退款</a></li>
+                            <li class="specific"><a href="#">查看美团券密码</a></li>
+                            <li class="specific"><a href="#">常见问题</a></li>
+                            <li class="specific"><a href="#">用户协议</a></li>
+                            <li class="specific"><a href="#">隐私政策</a></li>
+                            <li class="specific"><a href="#">反诈骗公告</a></li>
+                        </ul>
+                        <ul class="first">
+                            <li class="title-li">美团服务</li>
+                            <li class="specific"><a href="#">美团外卖</a></li>
+                            <li class="specific"><a href="#">美团酒店</a></li>
+                            <li class="specific"><a href="#">猫眼电影</a></li>
+                            <li class="specific"><a href="#">美团云</a></li>
+                            <li class="specific"><a href="#">大众点评</a></li>
+                            <li class="specific"><a href="#">榛果民宿</a></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <ul>
+                            <li class="title-li">商家合作</li>
+                            <li class="specific"><a href="#">美食商家入驻(非外卖)</a></li>
+                            <li class="specific"><a href="#">美团外卖开店申请</a></li>
+                            <li class="specific"><a href="#">美团收银官网</a></li>
+                            <li class="specific"><a href="#">外卖配送加盟申请</a></li>
+                            <li class="specific"><a href="#">美团点评餐饮学院</a></li>
+                            <li class="specific"><a href="#">酒店商家入驻</a></li>
+                            <li class="specific"><a href="#">境内度假商家入驻</a></li>
+                            <li class="specific"><a href="#">综合商家入驻</a></li>
+                            <li class="specific"><a href="#">榛果民宿房东商家入驻</a></li>
+                            <li class="specific"><a href="#">商家开票申请</a></li>
+                            <li class="specific"><a href="#"> 美团点评智能收银机</a></li>
+                            <li class="specific"><a href="#"> 聚宝盆餐饮开放平台</a></li>
+                            <li class="specific"><a href="#">美团智能支付</a></li>
+                            <li class="specific"><a href="#">美团排队</a></li>
+                            <li class="specific"><a href="#">快驴进货商家合作</a></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <ul>
+                            <li class="title-li">代理商加盟</li>
+                            <li class="specific"><a href="#">智能支付渠道加盟商招募</a></li>
+                            <li class="specific"><a href="#">到店餐饮代理商招募</a></li>
+                            <li class="specific"><a href="#">非餐饮代理商招募</a></li>
+                            <li class="specific"><a href="#">美团联盟</a></li>
+                            <li class="specific"><a href="#"> 美团收银招募线上分销商</a></li>
+                            <li class="specific"><a href="#">美团点评5S服务商招募</a></li>
+                        </ul>
+                        <ul class="second">
+                            <li class="title-li">行业规范</li>
+                            <li class="specific"><a href="#">美团点评餐饮安全管理办法</a></li>
+                        </ul>
+                        <ul class="third">
+                            <li class="title-li">廉正举报</li>
+                            <li class="specific"><a href="#">廉政邮箱</a></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <ul>
+                            <li class="title-li">关注美团</li>
+                            <li class="specific"><a href="#">美团新浪微博</a></li>
+                        </ul>
+                        <ul class="fourth">
+                            <li class="title-li">关于美团</li>
+                            <li class="specific"><a href="#">媒体报道</a></li>
+                        </ul>
+                        <ul class="fifth">
+                            <li class="title-li">公司信息</li>
+                            <li class="specific"><a href="#">加入我们</a></li>
+                            <li class="specific"><a href="#">法律声明</a></li>
+                            <li class="specific"><a href="#">商户服务协议</a></li>
+                            <li class="specific"><a href="#">商户诚信公约及管理办法</a></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <ul>
+                            <li class="title-li">消费者服务热线</li>
+                            <li class="specific"><a href="#">外卖消费者： 10109777</a></li>
+                            <li class="specific"><a href="#">猫眼消费者： 10105335</a></li>
+                            <li class="specific"><a href="#">其他消费者： 10107888</a></li>
+                        </ul>
+                        <ul class="sixth">
+                            <li class="title-li">商家服务热线</li>
+                            <li class="specific"><a href="#">外卖&餐饮商家： 10105557</a></li>
+                            <li class="specific"><a href="#"> 休闲娱乐、丽人、ktv、教育、结婚、亲子、家装等商家： 10100107</a></li>
+                        </ul>
+                        <ul class="seventh">
+                            <li class="title-li">投诉举报热线</li>
+                            <li class="specific"><a href="#">违法和不良信息举报电话： 4006018900</a></li>
+                            <li class="specific"><a href="#">举报邮箱： tousujubao@meituan.com</a></li>
+                        </ul>
+                        <a href="#" class="enter">商家自助入驻美团入口</a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <div class="left">
+                        <p>
+                            ©美团网团购 meituan.com
+                            <a href="#">京ICP证070791号</a>
+                            <a href="#">京ICP备10211739号</a>
+                            <a href="#">电子公告服务规则</a>
+                        </p>
+                        <p>
+                            <a href="#">广播电视节目制作经营许可证（京）字第03889号</a>
+                        </p>
+                    </div>
+                    <div class="right">
+                        <p class="right">
+                            <a href="#">京公网安备11010502025545号</a>
+                        </p>
+                        <p class="img">
+                            <a href="#" class="first"></a>
+                            <a href="#" class="second"></a>
+                            <a href="#" class="third"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
