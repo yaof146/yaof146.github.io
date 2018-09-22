@@ -1,34 +1,13 @@
-$(function() {
+$(function() {                                             //页面内容都加载完才执行  $(document).ready(function(){})
 
-    //header
-   $('li.top').hover(function() {
-        var self=$(this);
-        self.find('.nav').show();
-        self.find('.box').css({
-                       'color':'#31bbac',
-                       'background':'#fff',
-                       'border-left':'1px solid #e5e5e5',
-                       'border-right':'1px solid #e5e5e5'
-                     })
-    },function() {
-        var self=$(this);
-        self.find('.nav').hide();
-        self.find('.box').css({
-                        'color':'#999',
-                        'background':'#f8f8f8',
-                        'border':'0'
-                    })
-    });
-
-
-
-
+    
+          
 
 
     //全部分类
     var menuJson = {
         niceFood : [{title:"美食",link:'http://www.baidu.com',childNav:['代金券','甜点饮品','火锅','自助餐','小吃快餐','日韩料理',
-                '西餐','聚餐宴请','烧烤烤肉','东北菜','川湘菜','江浙菜','香锅烤鱼','粤港菜','中式烧烤/烤串','西北菜','咖啡酒吧茶馆','' +
+                '西餐','聚餐宴请','烧烤烤肉','东北菜','川湘菜','江浙菜','香锅烤鱼','粤港菜','中式烧烤/烤串','西北菜','咖啡酒吧茶馆',
                 '云贵菜','东南亚菜','海鲜素食','台湾/客家菜','创意菜汤/粥/炖菜','蒙餐','新疆菜','其他美食','京菜鲁菜']}],
         takeout:[{title:"外卖",link:'http://www.takeout.com',childNav:['美团外卖']}],
         hotel:[{title:"酒店星级",link:'http://www.hotel.com',childNav:['经济型','舒适/三星','高档/四星','豪华/五星']}],
@@ -72,66 +51,50 @@ $(function() {
                     '汽车保险','4S店/汽车销售','更多汽车服务','机油保养','汽车报价','二手车','广告驾校','交警队','汽车改装','汽车配件']},
                 {title:"宠物",link:'http://www.health3.com',childNav:['宠物店','宠物医院']}],
         drink:[{title:"玩乐",link:'http://www.drink.com',childNav:['KTV','酒吧','密室逃脱','游乐游艺','网吧网咖','私人影院','DIY手工坊',
-                '桌面游戏','采摘/农家乐','棋牌室','轰趴馆','真人CS','VR','其他玩乐']}],
-    }
+                '桌面游戏','采摘/农家乐','棋牌室','轰趴馆','真人CS','VR','其他玩乐']}]
+    };
 
-    $('.li-menu').hover(function() {
+    $('.li-menu').hover(
+      function() {
         var self = this;
         var menuTitle = $(self).attr('menuTitle');
         var menuObj = menuJson[menuTitle];
         var html = '';
         for (var i = 0; i < menuObj.length; i++) {
-            var startHtml = '<div class="main_menu_left_invisible">' + '<div class="invisible_top">' +
-                '<h3 class="invisible_top_left">' + menuObj[i].title + '</h3>' +
-                '<a class="invisible_top_right" href="' + menuObj[i].link + '">更多&gt;&gt;</a>' + '</div>' +
-                '<ul class="invisible_main">';
-            var endHtml = '<li class="last"></li></ul></div>';
-            var childHtml = '';
-            for (var j = 0; j < menuObj[i].childNav.length; j++) {
-                var childHtmlItem = '<li>' + '<a href="#">' + menuObj[i].childNav[j] + '</a>' + '</li>';
-                childHtml += childHtmlItem;
-            }
-            var itemHtml = startHtml + childHtml + endHtml;
-            html += itemHtml;
+                var startHtml = '<div class="main_menu_left_invisible">' + '<div class="invisible_top">' +
+                    '<h3 class="invisible_top_left">' + menuObj[i].title + '</h3>' +
+                    '<a class="invisible_top_right" href="' + menuObj[i].link + '">更多&gt;&gt;</a>' + '</div>' +
+                    '<ul class="invisible_main">';
+                var endHtml = '</ul></div>';
+                var childHtml = '';
+                for (var j = 0; j < menuObj[i].childNav.length; j++) {
+                    var childHtmlItem = '<li>' + '<a href="#">' + menuObj[i].childNav[j] + '</a>' + '</li>';
+                    childHtml += childHtmlItem;
+                }
+                var itemHtml = startHtml + childHtml + endHtml;
+                html += itemHtml;
         }
         if($(self).find('.main_menu_left_invisible').length==0) {
-            $(self).append(html);
-            var parent = self.closest('[class=main_menu_left]');
-            var index = self.index();
-            parent.find('.main_menu_left_invisible').hide().eq(index-1).show();
+            $(self).find('div.box').append(html).show();
+        }else{
+            $(self).find('div.box').show();
         }
+    },
+    function(){
+          var that = this;
+          $(that).closest('.main_menu_left_main').find('.box').hide();
+    }
+  );
 
 
-        // if($(self).find('.main_menu_left_invisible').length==0) {
-        //     $(self).append(html);
-        // }else{
-        //     $('.main_menu_left_invisible').show();
-        // }
-        // },function(){
-        //    $('.main_menu_left_invisible').hide();
-        // }
-
-
-
-
-
-    });
-
-    //
     $('.other_li').hover(function () {
         var self = $(this);
         var parent = self.closest('[class^=main_content_]');
         var index = self.index();
         parent.find('.li-down').hide().eq(index-1).show();
-    });
-
-    //三角形
-    $('.other_li').hover(function () {
-        var self = $(this);
-        var parent = self.closest('[class^=main_content_]');
-        var index = self.index();
         parent.find('.triangle').hide().eq(index-1).show();
     });
+
     $('.li-down').hover(function () {
         var self = $(this);
         var parent = self.closest('[class^=main_content_]');
@@ -143,25 +106,19 @@ $(function() {
 
     //图片轮播
     /* 设置第一张图片 */
-    $(".main_menu_center_top_left .top-left-img li").first().before($(".main_menu_center_top_left .top-left-img li").last());
-
-    /* 鼠标悬停箭头按钮显示 */
-    $(".main_menu_center_top_left").hover(function(){
-        $(this).find(".arrow").stop(true,true).fadeIn(300)
-    },function(){
-        $(this).find(".arrow").fadeOut(300)
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        effect: 'fade',
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
     });
-
-    /* 滚动切换 */
-    $(".main_menu_center_top_left").slide({
-        titCell:".hd ul",                     //自定义标题标签
-        mainCell:".top-left-img ul",  //自定义标题标签
-        effect:"leftLoop",  //切换动画. 默认不使用动画
-        autoPlay:true,  //自动运行
-        vis:3,  //visible缩写，mainCell的可视范围个数，当实际内容个数少于可视个数的时候，不执行SuperSlide效果
-        autoPage:true,  //若为true，则titCell为导航元素的包裹层对象
-        trigger:"click"  //滑动触发方式
-    });
+   
 
 
 
