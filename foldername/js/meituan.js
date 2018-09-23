@@ -86,27 +86,25 @@ $(function() {                                             //页面内容都加�
     }
   );
 
-
     $('.other_li').hover(function () {
-        var self = $(this);
+        var self = $(this);//正在热映
         var parent = self.closest('[class^=main_content_]');
         var index = self.index();
         parent.find('.li-down').hide().eq(index-1).show();
-        parent.find('.triangle').hide().eq(index-1).show();
+        // parent.find('.triangle').hide().eq(index-1).show();
+        self.find('.triangle').show().closest('.other_li').siblings('.other_li').find('.triangle').hide();
+        debugger
+        if(index == 1){
+            shwoSwiper('#main_visible');
+        }
+        if(index == 2){
+            shwoSwiper('#main_invisible');
+        }
+
     });
-
-    $('.li-down').hover(function () {
-        var self = $(this);
-        var parent = self.closest('[class^=main_content_]');
-        var index = self.index();
-        parent.find('.triangle').hide().eq(index).show();
-    });
-
-
-
-    //图片轮播
+//图片轮播
     /* 设置第一张图片 */
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.swiper-container.main_menu_center_top_left', {
         spaceBetween: 30,
         effect: 'fade',
         pagination: {
@@ -118,6 +116,27 @@ $(function() {                                             //页面内容都加�
             prevEl: '.swiper-button-prev',
         },
     });
+    //图片轮播-电影
+    function shwoSwiper(ele){
+        if(typeof ele != 'string'){
+            return false;
+        }
+        var mySwiper2=new Swiper(ele,{
+            slidesPerView:5,
+            slidesPerGroup:5,
+            loop:true,
+            loopFillGroupWithBlank:true,
+            pagination:{
+                el:'.swiper-pagination',
+                clickable:true
+            },
+            navigation:{
+                nextEl:'.swiper-button-next',
+                prevEl:'.swiper-button-prev'
+            }
+        });
+    }
+
    
 
 
