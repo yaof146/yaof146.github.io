@@ -93,12 +93,11 @@ $(function() {                                             //页面内容都加�
         parent.find('.li-down').hide().eq(index-1).show();
         // parent.find('.triangle').hide().eq(index-1).show();
         self.find('.triangle').show().closest('.other_li').siblings('.other_li').find('.triangle').hide();
-        debugger
         if(index == 1){
-            shwoSwiper('#main_visible');
+            showSwiper('#main_visible');
         }
         if(index == 2){
-            shwoSwiper('#main_invisible');
+            showSwiper('#main_invisible');
         }
 
     });
@@ -117,7 +116,7 @@ $(function() {                                             //页面内容都加�
         },
     });
     //图片轮播-电影
-    function shwoSwiper(ele){
+    function showSwiper(ele){
         if(typeof ele != 'string'){
             return false;
         }
